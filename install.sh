@@ -31,6 +31,7 @@ install_mac() {
   fi
   info "Installing packages via Homebrew..."
   brew install tmux neovim git
+  brew install --cask ghostty
 }
 
 install_linux() {
@@ -80,6 +81,9 @@ backup_and_link "$DOTFILES_DIR/nvim" "$HOME/.config/nvim"
 
 # Tmux
 backup_and_link "$DOTFILES_DIR/tmux/tmux.conf" "$HOME/.config/tmux/tmux.conf"
+
+# Ghostty
+backup_and_link "$DOTFILES_DIR/ghostty/config" "$HOME/.config/ghostty/config"
 
 # --- TPM (Tmux Plugin Manager) ---
 

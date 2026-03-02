@@ -1,9 +1,10 @@
 # dotfiles
 
-Personal tmux and neovim configurations. Works on macOS and Linux.
+Personal ghostty, tmux, and neovim configurations. Works on macOS and Linux.
 
 ## What's included
 
+- **Ghostty** — terminal emulator with Catppuccin Mocha theme
 - **Neovim** — [NvChad](https://nvchad.com/) v2.5 with catppuccin theme, LSP, conform.nvim, telescope, and more
 - **tmux** — catppuccin theme, TPM plugins (sensible, yank, resurrect, continuum), mouse support
 
@@ -17,7 +18,7 @@ cd ~/dotfiles
 
 The install script will:
 
-1. Install tmux, neovim, and git (via Homebrew on macOS, or apt/dnf/pacman on Linux)
+1. Install ghostty, tmux, neovim, and git (via Homebrew on macOS, or apt/dnf/pacman on Linux)
 2. Back up any existing configs (as `*.bak`) and create symlinks
 3. Install [TPM](https://github.com/tmux-plugins/tpm) (Tmux Plugin Manager)
 
@@ -31,6 +32,8 @@ The install script will:
 ```
 dotfiles/
 ├── install.sh
+├── ghostty/
+│   └── config
 ├── tmux/
 │   └── tmux.conf
 └── nvim/
